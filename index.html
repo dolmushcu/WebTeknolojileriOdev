@@ -10,18 +10,19 @@
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/general.css">
 </head>
+
 <body>
-  <div class="main">
-    <nav class="navbar navbar-expand-md constrain-container mx-auto p-4">
+  <div class="super">
+    <header class="navbar navbar-expand-md constrain-container mx-auto p-4">
       <div class="container-fluid p-0">
         <a href="/" class="navbar-brand logo">İsmail E.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="bi bi-list"></i>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav gap-2">
             <li class="nav-item p-3">
-              <a href="#" class="link">CV</a>
+              <a href="/resume.html" class="link">CV</a>
             </li>
             <li class="nav-item p-3">
               <a href="#" class="link">Şehir</a>
@@ -36,65 +37,66 @@
               <a href="#" class="link">Giriş</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
 
-    <div class="container-fluid content-container">
-      <div class="row justify-content-center">
-        <div class="col">
+    <main class="container-fluid content-container">
+      <article class="row justify-content-center">
+        <header class="col">
           <h1>Merhaba, Ben İsmail.</h1>
           <h3>Ögrenci.</h3>
-        </div>
-      </div>
+        </header>
+      </article>
       <hr class="mt-5">
-      <div class="row introduction-container g-4">
-        <div class="col-sm-6">
+      <article class="row introduction-container g-4">
+        <section class="col-md-6">
           <h2>Kimim Ben</h2>
-          <p>İlk ve orta öğretimimi Konyada tamamladım ve şu anda Sakarya Üniversitesi bilgisayar mühendisliği bölümünde okuyorum. Ortaokul zamanlarında arduino vasıtasıyla yazılım ile tanıştım. O zamandan beri de yazılım ve genel olarak teknoloji beni hep cezbetmiştir.</p>
-        </div>
-        <div class="col-sm-6">
+          <p>İlk ve orta öğrenimimi Konyada tamamladıktan sonra Sakarya Üniversitesi bilgisayar mühendisliği bölümüne yerleştim ve halen eğitimime devam etmekteyim. Yazılım ile ilk olarak ortaokul zamanlarında arduino vasıtasıyla tanıştım, o zamandan
+          beri de yazılım beni hep cezbetmiştir.</p>
+        </section>
+        <section class="col-md-6">
           <h2>İlgi Alanlarım</h2>
           <p>Çoğu genç gibi video oyunları benim de ilgi alanım ama çoğu Türk gencinin aksine futbol kesinlikle ilgimi çeken bir alan değil. Ayrıca oldukça fazla komedi dizisi izlerim. Bunların haricinde yazılım ve siber güvenlik ile de ilgileniyorum.</p>
-        </div>
-      </div>
+        </section>
+      </article>
       <hr class="my-4">
-      <div class="row introduction-container">
-        <div class="col-12">
+      <article class="row introduction-container">
+        <section class="col-12">
           <h2>Bazı Projeler</h2>
           <p>Github profilimde bulunan, boş zamanlarımda hobi olarak yaptığım bazı projeler.</p>
-        </div>
-      </div>
-      <div class="row pt-4 g-4">
-        <div class="col-md-6">
-          <div class="card border-0">
+        </section>
+      </article>
+      <article class="row pt-4 g-4">
+        <section class="col-md-6">
+          <figure class="card border-0">
             <img src="assets/pathfinding.png" alt="path finding">
-            <div class="card-body px-0 bg-transparent ">
+            <figcaption class="card-body px-0 bg-transparent ">
               <span>Path Finding</span>
               <a class="stretched-link" href="https://github.com/dolmushcu/PathFinding"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card border-0">
+            </figcaption>
+          </figure>
+        </section>
+        <section class="col-md-6">
+          <figure class="card border-0">
             <img src="assets/verlet.png" alt="Verlet Integration">
-            <div class="card-body px-0 bg-transparent ">
+            <figcaption class="card-body px-0 bg-transparent ">
               <span>Verlet Integration</span>
               <a class="stretched-link" href="https://github.com/dolmushcu/VerletIntegration"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card border-0">
+            </figcaption>
+          </figure>
+        </section>
+        <section class="col-md-6">
+          <figure class="card border-0">
             <img src="assets/raycasting.png" alt="Ray Casting">
-            <div class="card-body px-0 bg-transparent ">
+            <figcaption class="card-body px-0 bg-transparent ">
               <span>Ray Casting</span>
               <a class="stretched-link" href="https://github.com/dolmushcu/RayCasting"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </figcaption>
+          </figure>
+        </section>
+      </article>
+    </main>
 
     <footer class="footer">
       <a class="logo" href="https://www.linkedin.com/in/ismail-ensar-gulsen/">

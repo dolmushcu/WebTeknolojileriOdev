@@ -114,6 +114,16 @@ p {
 .cv-sec-6 p {
   white-space: nowrap;
 }
+.poster-container {
+  width: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.poster-details-container {
+  padding-top: 1rem;
+}
 
 @media (max-width:767px) {
   .content-container {

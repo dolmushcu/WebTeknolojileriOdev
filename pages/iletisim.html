@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ismail E.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/general.css">
+</head>
+
+<body>
+  <div class="super">
+    <header class="navbar navbar-expand-md constrain-container mx-auto p-4">
+      <div class="container-fluid p-0">
+        <a href="../" class="navbar-brand logo">İsmail E.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item p-3">
+              <a href="./ozgecmis.html" class="link">CV</a>
+            </li>
+            <li class="nav-item dropdown p-3">
+              <a href="#" class="link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Şehir</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./sehir.html">Şehir</a></li>
+                <li><a class="dropdown-item" href="./sehir/miras.html">Mirasımız</a></li>
+              </ul>
+            </li>
+            <li class="nav-item p-3">
+              <a href="./ilgialani.php" class="link">İlgi Alanları</a>
+            </li>
+            <li class="nav-item p-3">
+              <a href="./iletisim.html" class="link">İletişim</a>
+            </li>
+            <li class="nav-item p-3">
+              <a href="./giris.html" class="link">Giriş</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container-fluid content-container">
+      <article class="row">
+        <header class="col-md-8">
+          <h1 class="text-break">İletişim</h1>
+        </header>
+      </article>
+      <hr>
+      <form action="./post/iletisim.php" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">İsim Soyisim</label>
+          <input type="text" class="form-control" id="name" name="isim" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="text" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Telefon</label>
+          <input type="text" class="form-control" id="phone" name="telefon" required>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Konu</label>
+          <select id="subject" class="form-select" name="konu" required>
+            <option value="" selected>Seçiniz</option>
+            <option value="diger">Diğer</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mesajınız</label>
+          <textarea name="mesaj" class="form-control" id="message" rows="6" required></textarea>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="1" id="approve" name="onay" required>
+          <label class="form-check-label" for="approve">
+            Şartları onaylıyorum.
+          </label>
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Gönder</button>
+        <button type="reset" class="btn btn-primary">Temizle</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <a class="logo" href="https://www.linkedin.com/in/ismail-ensar-gulsen/">
+        <i class="bi bi-linkedin px-3"></i>
+      </a>
+      <a class="logo" href="https://github.com/dolmushcu">
+        <i class="bi bi-github px-3"></i>
+      </a>
+      <a class="logo" href="mailto:ismailensarg@gmail.com">
+        <i class="bi bi-envelope-fill px-3"></i>
+      </a>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../js/iletisim.js"></script>
+</body>
+
+</html>

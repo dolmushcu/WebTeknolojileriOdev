@@ -25,7 +25,7 @@ function check_all() {
   mesaj.value.trim() != '' ? make_valid(mesaj) : make_invalid(mesaj);
   konu.value.trim() != '' ? make_valid(konu) : make_invalid(konu);
   onay.checked ? make_valid(onay) : make_invalid(onay);
-  check_if_fits(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, mail.value.trim()) != '' ? make_valid(mail) : make_invalid(mail);
+  check_if_fits(/^[\w\-\.]+@([\w-]+\.)+[\w-]{2,4}$/, mail.value.trim()) != '' ? make_valid(mail) : make_invalid(mail);
   check_if_fits(/^(\+9)?0?[^0]\d{9}$/, tel.value.trim()) != '' ? make_valid(tel) : make_invalid(tel);
 }
 

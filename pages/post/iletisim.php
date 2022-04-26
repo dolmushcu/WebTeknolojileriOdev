@@ -9,5 +9,4 @@
   }
   else {
     echo 'Lütfen tüm alanları doldurun.';
-    // header('refresh:5;url=wherever.php');
   }
